@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #52929f;
+    color: #ffc962;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+header{
+    height: 6rem;
+    width: 100%;
+    background-color: #63AFBF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    position: absolute;
+    z-index: 10;
+}
+
+
+
+.logo {
+    height: 4rem;
+    width: 4rem;
+}
+
+#info-btn{
+    margin-top: 2rem;
+    /* background-color: #fece66; */
+    color: #151515;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 4rem;
+    border-radius: 2rem;
+    border: 0;
+}
+
+#info-btn:hover {
+    background-color: #fece66;
+    cursor: pointer;
+}
+
+
+
+
+
+main{
+    background-color: #52929f;
+    padding-top: 6rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #63AFBF;
+    width: 100%;
+    height: 3rem;
+    
+}
+
+.mainContainer {
+
+    width: 100%;
+   height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.welcomeContainer {
+    font-size: 5rem;
+    font-weight: bold;
+    color: whitesmoke;
+    /* color: #fece66; */
+}
+
+.front-page{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 0;
+    position: absolute;
+}
+
+.second-page{
+  opacity: 0;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 0;
+  position: absolute;
+}
+
+.second-page-animation{
+
+    animation: fadeIn 1.5s forwards ease-in-out;
+    animation-delay: .7s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+
+.menu-animation{
+
+animation: fly 2s forwards ease-in-out; 
+
+animation-delay: .1s;
+}
+
+@keyframes fly {
+    0%   { 
+    transform: translateY(0%); 
+    width: 100%;
+    opacity: 100%;
+    }
+
+    100% { 
+    transform: translateY(-100%); 
+    width:85%;
+    opacity: 0%;
+    }
+   }
+
+
+
+.footerContainer {
+    margin: 0 10%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
